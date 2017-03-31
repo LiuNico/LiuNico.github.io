@@ -1,0 +1,98 @@
+
+body,ul,li{
+	padding: 0;
+	margin: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.container{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	min-height: 500px;
+	color: #fff;
+	background-color: #5bbc2e;
+	font-family: "Microsoft yahei";
+}
+
+.content{
+	width: 80%;
+	max-width: 900px;
+	max-height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.content h1{
+	font-size: 70px;
+	line-height: 100px;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.content ul{
+	display: flex;
+}
+
+.content li{
+	flex: 1;
+	text-align: center;
+}
+
+.content a{
+	font-size: 24px;
+	animation: myopacity 3s infinite;
+	-webkit-animation: myopacity 3s infinite;
+}
+
+.content a:hover{
+	font-weight: bold;
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+
+	.content{
+		width: 10rem;
+		max-width: 600px;
+	}
+
+	.content h1{
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+
+	.content ul{
+		display: block;
+	}
+
+	.content a{
+		font-size: .5rem;
+	}
+}
+
+@keyframes myopacity
+{
+	0% {opacity:0.3;}
+	50% {opacity:1;}
+	100% {opacity:0.3;}
+}
+
+@-webkit-keyframes myopacity /*Safari and Chrome*/
+{
+	0% {opacity:0.3;}
+	50% {opacity:1;}
+	100% {opacity:0.3;}
+}
