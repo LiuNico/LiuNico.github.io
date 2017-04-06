@@ -2,22 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<title>矢泽妮可是我本人</title>
 	<link rel="stylesheet" href="static/index.css">
+	<link rel="stylesheet" href="static/plugin/fullpage/jquery.fullPage.css">
 </head>
 <body>
-	<div class="container">
-		<div class="content">
-			<h1>石原里美是我本人</h1>
-			<ul>
-				<li><a href="blog/index.html">My Blog</a></li>
-				<li><a href="#">My Github</a></li>
-				<li><a href="#">My Github</a></li>
-				<li><a href="#">My Github</a></li>
-			</ul>
+	<div id="fullpage">
+		<div class="section intro">
+			<h1>Nico</h1>
+			<p>大家好，请大家观看小绿戴眼镜</p>
+		</div>
+		<div class="section blog">
+			<p>You're so hypnotising.could u be the devil could you be an angel
+your touch magnetizing.feels like going floating leave my body glowing
+They say be afraid
+you're not like the others futuristic lovers.different DNA they dont understand u
+You're from a whole other/another world.a different dimension
+you open my eyes.and im ready to go lead me into the light</p>
+		</div>
+		<div class="section project">
+			<div class="slide">我的github</div>
+			<div class="slide">我的微博</div>
 		</div>
 	</div>
-	<script src="static/js/responsive.min.js"></script>
+<script src="static/js/responsive.min.js"></script>
+<script src="static/plugin/jquery/jquery.min.js"></script>
+<script src="static/plugin/jquery-ui-1.10.3.min.js"></script>
+<script src="static/plugin/fullpage/jquery.fullPage.min.js"></script>
+<script>
+$(document).ready(function() {
+
+	$('#fullpage').fullpage();
+
+});
+
+
+</script>
 </body>
 </html>

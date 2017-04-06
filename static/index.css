@@ -1,114 +1,54 @@
 
-body,ul,li{
+body{
 	padding: 0;
 	margin: 0;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-.content a{
-	text-decoration: none;
-	color: #b2b2b2;
-	font-size: 24px;
-	opacity: 0.3;
-}
-
-.container{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	min-height: 500px;
-	color: #b2b2b2;
-	background-color: #000;
 	font-family: "Microsoft yahei";
 }
 
-.content{
-	width: 80%;
-	max-width: 900px;
-	max-height: 400px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-}
-
-.content h1{
-  margin: 0 0 30px 0;
-  text-align: center;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-  background: url(line1.png) repeat-y;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 30s linear infinite;
-}
-
-.content h1:hover{
-	transform: translate(0);
-}
-
-.content ul{
-	display: flex;
-}
-
-.content li{
-	flex: 1;
+.section{
+	background: #ffff92;
 	text-align: center;
 }
 
-.content a:hover{
-	animation: myopacity 3s 1;
-	-webkit-animation: myopacity 3s 1;
+.section p{
+	font-size: 20px;
+	width: 80%;
+	margin: 10px auto;
 }
 
-.content a:hover{
-	font-weight: bold;
-	opacity: 1;
+.intro h1{
+    width: 12rem;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.88rem;
 }
 
-@media screen and (max-width: 768px){
+.intro h1::before{
+    content: "";
+    width: 6rem;
+    height: 4.32rem;
+    background: url(img/loading.gif) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+}
 
-	.content{
-		width: 10rem;
-		max-width: 600px;
-	}
+.blog{
+	color: #fff;
+	background: linear-gradient(to bottom,#ffff92 10%,#b6e7a8 60%,#5cdb98 100%);
+}
 
-	.content h1{
-		font-size: 1rem;
-		line-height: 1.4rem;
-	}
+.project{
+	color: #fff;
+	background: #5cdb98;
+}
 
-	.content ul{
-		display: block;
-	}
-
-	.content a{
+@media screen and (max-width: 767px){
+	.section p{
 		font-size: .5rem;
+		width: 10rem;
 	}
-}
-
-@keyframes myopacity
-{
-	0% {opacity:0.3;}
-	100% {opacity:1;}
-}
-
-@-webkit-keyframes myopacity /*Safari and Chrome*/
-{
-	0% {opacity:0.3;}
-	100% {opacity:1;}
-}
-
-/* Animate Background Image */
-@-webkit-keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
 }
